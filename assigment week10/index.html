@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Bookmarker
+            </text>
+        </svg>
+    </div>
+
+   
+        <h3><i class="fa-solid fa-bookmark" style="color: #4b1f51;"></i>Bookmark your favourite site <i class="fa-solid fa-bookmark" style="color: #f1e8f2;"></i></h3>
+  
+   <form>
+       <div>
+        <br><br>
+        <label><i class="fa-solid fa-book-bookmark"></i>Site Name</label>
+         <br>
+        <input type="text" id="siteName" name="siteName" value="" placeholder="Bookmark name">
+       </div>
+        <br>
+       <div>
+        <label><i class="fa-solid fa-link"></i>Site URL</label>
+        <br>
+        <input type="text" id="siteURL" name="siteURL" placeholder="WebSite url">
+       </div>
+        <button type="button" onclick="addLink()" >Submit</button>
+    </form>
+
+    <table class=" table table-light table-striped  table-bordered  text-center table-hover container m-3 ">
+        <thead>
+            <th>Index</th>
+            <th>WebSite Name</th>
+            <th> the visited link</th>
+            <th>Delete</th>
+          
+        </thead>
+        <tbody id="myData">
+        
+         
+        </tbody>
+    </table>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
